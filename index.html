@@ -12,6 +12,31 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+
+    <!-- cdnからslick読み込み https://kenwheeler.github.io/slick/-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slick用にjs追加 -->
+    <script src="./js/slide.js"></script>
     
     <script src="./js/main.js"></script>
     <title>トップページ</title>
@@ -32,15 +57,22 @@
       </div>
     </header>
 
-    <div class="top_eye_catch">Matsumoto's Web Site</div>
+    <div class="top_eye_catch">nice web site</div>
 
     <div class="contents">
       <section class="sec">
-        <h2>更新履歴</h2>
-        <ul>
-          <li><a href="./report.html">レポートを追加しました</a></li>
-          <li><a href="./works.html">WORKSページを追加しました</a></li>
-        </ul>
+        <section>
+          <div class="slide">
+            <div><img src="./images/toy01.jpg" /></div>
+            <div><img src="./images/toy02.jpg" /></div>
+            <div><img src="./images/toy03.jpg" /></div>
+            <div><img src="./images/toy01.jpg" /></div>
+            <div><img src="./images/toy02.jpg" /></div>
+            <div><img src="./images/toy03.jpg" /></div>
+          </div>
+        </section>
+
+
       </section>
 
       <section class="sec">
@@ -48,15 +80,14 @@
         <div class="link_menu">
           <div class="each_link">
             <div class="link_pic">
-              <img src="./images/toy01.jpg" />
+              <img src="./images/report.jpg" />
             </div>
             <div class="link_txt">
               <p class="link_title">PROFILE</p>
               <div>
-                これまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキスト<br />
-                これまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキスト
+                履歴書代わりのページです。
               </div>
-              <a class="link_btn" href="./profile.html">Go!</a>
+              <a class="link_btn" href="./profile.html">MORE</a>
             </div>
           </div>
 
@@ -76,6 +107,6 @@
       </section>
     </div>
 
-    <footer>名前など</footer>
+    <footer>2022 matsumoto </footer>
   </body>
 </html>
